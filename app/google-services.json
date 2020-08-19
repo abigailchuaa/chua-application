@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935329318129",
+    "firebase_url": "https://chua-intern-application.firebaseio.com",
+    "project_id": "chua-intern-application",
+    "storage_bucket": "chua-intern-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935329318129:android:9ebfa8f43536416c755550",
+        "android_client_info": {
+          "package_name": "abby.android.chuainternapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935329318129-d8dquib21m642rt35sokt1c0jdd7fc5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abby.android.chuainternapplication",
+            "certificate_hash": "84da6ea7959211db0715c2183a013c79a383baa2"
+          }
+        },
+        {
+          "client_id": "935329318129-k2eugf0922i7kks20kse91sjuit8j6n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5os3i7lpVvdvZm_Ul2Ll3PhoT3N39cgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935329318129-k2eugf0922i7kks20kse91sjuit8j6n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
