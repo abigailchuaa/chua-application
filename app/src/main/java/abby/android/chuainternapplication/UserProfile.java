@@ -45,9 +45,7 @@ public class UserProfile extends AppCompatActivity {
 
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        //updateUI(currentUser);
         displayUser(currentUser);
     }
 
@@ -57,30 +55,12 @@ public class UserProfile extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         if (currentUser != null) {
             String emailSaved = currentUser.getEmail();
-            // Check if user's email is verified
-            //boolean emailVerified = user.isEmailVerified();
-
-            // The user's ID, unique to the Firebase project. Do NOT use this value to
-            // authenticate with your backend server, if you have one. Use
-            // FirebaseUser.getIdToken() instead.
             String userUuid = currentUser.getUid();
             email.setText(emailSaved);
             uuid.setText(userUuid);
         }
     }
 
-/*    public void updateUI (FirebaseUser account){
-        if (account != null) {
-            *//*Toast toast = Toast.makeText(getApplicationContext(), "Register successful", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 80);
-            toast.show();*//*
-            startActivity(new Intent(this, UserProfile.class));
-        } else {
-            Toast toast = Toast.makeText(getApplicationContext(), "Register error", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 80);
-            toast.show();
-        }
-    }*/
 
     public void signOut() {
         mAuth.signOut();
